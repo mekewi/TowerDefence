@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Game>
+	<Grid>
+		<Rows>10</Rows>
+		<Columns>10</Columns>
+	</Grid>
+	<Player>
+		<Health>100</Health>
+		<Position>
+			<Row>3</Row>
+			<Column>4</Column>
+		</Position>
+	</Player>
+	<turrets>
+		<turret1>
+			<Position>
+				<Row>0</Row>
+				<Column>1</Column>
+			</Position>
+			<Information>
+				<BulletSpeed>9</BulletSpeed>
+				<turretRange>5</turretRange>
+			</Information>
+		</turret1>
+		<turret2>
+			<Position>
+				<Row>1</Row>
+				<Column>2</Column>
+			</Position>
+			<Information>
+				<BulletSpeed>5</BulletSpeed>
+				<turretRange>9</turretRange>
+			</Information>
+		</turret2>
+		<turret3>
+			<Position>
+				<Row>3</Row>
+				<Column>2</Column>
+			</Position>
+			<Information>
+				<BulletSpeed>4</BulletSpeed>
+				<turretRange>6</turretRange>
+			</Information>
+		</turret3>
+		<turret4>
+			<Position>
+				<Row>6</Row>
+				<Column>4</Column>
+			</Position>
+			<Information>
+				<BulletSpeed>50</BulletSpeed>
+				<turretRange>20</turretRange>
+			</Information>
+		</turret4>
+		<turret5>
+			<Position>
+				<Row>3</Row>
+				<Column>7</Column>
+			</Position>
+			<Information>
+				<BulletSpeed>50</BulletSpeed>
+				<turretRange>20</turretRange>
+			</Information>
+		</turret5>
+
+
+
+				<turret6>
+			<Position>
+				<Row>8</Row>
+				<Column>3</Column>
+			</Position>
+			<Information>
+				<BulletSpeed>50</BulletSpeed>
+				<turretRange>20</turretRange>
+			</Information>
+		</turret6>
+
+
+
+				<turret7>
+			<Position>
+				<Row>0</Row>
+				<Column>0</Column>
+			</Position>
+			<Information>
+				<BulletSpeed>50</BulletSpeed>
+				<turretRange>20</turretRange>
+			</Information>
+		</turret7>
+
+
+
+				<turret8>
+			<Position>
+				<Row>2</Row>
+				<Column>8</Column>
+			</Position>
+			<Information>
+				<BulletSpeed>50</BulletSpeed>
+				<turretRange>20</turretRange>
+			</Information>
+		</turret8>
+
+
+
+				<turret9>
+			<Position>
+				<Row>7</Row>
+				<Column>7</Column>
+			</Position>
+			<Information>
+				<BulletSpeed>50</BulletSpeed>
+				<turretRange>20</turretRange>
+			</Information>
+		</turret9>
+
+
+
+				<turret10>
+			<Position>
+				<Row>8</Row>
+				<Column>8</Column>
+			</Position>
+			<Information>
+				<BulletSpeed>50</BulletSpeed>
+				<turretRange>20</turretRange>
+			</Information>
+		</turret10>
+
+
+
+				<turret11>
+			<Position>
+				<Row>9</Row>
+				<Column>9</Column>
+			</Position>
+			<Information>
+				<BulletSpeed>7</BulletSpeed>
+				<turretRange>20</turretRange>
+			</Information>
+		</turret11>
+
+
+
+				<turret12>
+			<Position>
+				<Row>5</Row>
+				<Column>1</Column>
+			</Position>
+			<Information>
+				<BulletSpeed>50</BulletSpeed>
+				<turretRange>20</turretRange>
+			</Information>
+		</turret12>
+
+
+
+				<turret13>
+			<Position>
+				<Row>5</Row>
+				<Column>1</Column>
+			</Position>
+			<Information>
+				<BulletSpeed>50</BulletSpeed>
+				<turretRange>20</turretRange>
+			</Information>
+		</turret13>
+
+		<turret14>
+			<Position>
+				<Row>1</Row>
+				<Column>5</Column>
+			</Position>
+			<Information>
+				<BulletSpeed>50</BulletSpeed>
+				<turretRange>20</turretRange>
+			</Information>
+		</turret14>
+
+
+				<turret15>
+			<Position>
+				<Row>6</Row>
+				<Column>6</Column>
+			</Position>
+			<Information>
+				<BulletSpeed>50</BulletSpeed>
+				<turretRange>20</turretRange>
+			</Information>
+		</turret15>
+
+
+
+				<turret16>
+			<Position>
+				<Row>6</Row>
+				<Column>8</Column>
+			</Position>
+			<Information>
+				<BulletSpeed>50</BulletSpeed>
+				<turretRange>20</turretRange>
+			</Information>
+		</turret16>
+
+
+				<turret17>
+			<Position>
+				<Row>8</Row>
+				<Column>6</Column>
+			</Position>
+			<Information>
+				<BulletSpeed>50</BulletSpeed>
+				<turretRange>20</turretRange>
+			</Information>
+		</turret17>
+
+
+						<turret18>
+			<Position>
+				<Row>0</Row>
+				<Column>9</Column>
+			</Position>
+			<Information>
+				<BulletSpeed>50</BulletSpeed>
+				<turretRange>20</turretRange>
+			</Information>
+		</turret18>
+
+
+						<turret19>
+			<Position>
+				<Row>5</Row>
+				<Column>8</Column>
+			</Position>
+			<Information>
+				<BulletSpeed>50</BulletSpeed>
+				<turretRange>20</turretRange>
+			</Information>
+		</turret19>
+
+						<turret20>
+			<Position>
+				<Row>7</Row>
+				<Column>1</Column>
+			</Position>
+			<Information>
+				<BulletSpeed>50</BulletSpeed>
+				<turretRange>20</turretRange>
+			</Information>
+		</turret20>
+
+	</turrets>
+</Game>

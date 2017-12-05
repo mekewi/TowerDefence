@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Game>
+	<Grid>
+		<Rows>100</Rows>
+		<Columns>100</Columns>
+	</Grid>
+	<Player>
+		<Health>100</Health>
+		<Position>
+			<Row>50</Row>
+			<Column>0</Column>
+		</Position>
+	</Player>
+	<turrets>
+		<turret1>
+			<Position>
+				<Row>50</Row>
+				<Column>0</Column>
+			</Position>
+		</turret1>
+		<turret2>
+			<Position>
+				<Row>50</Row>
+				<Column>0</Column>
+			</Position>
+		</turret2>
+	</turrets>
+</Game>
