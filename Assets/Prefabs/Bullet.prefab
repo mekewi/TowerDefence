@@ -185,6 +185,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   target: {fileID: 0}
   speed: 30
+  bulletImpact: {fileID: 1100116000256902, guid: d4639318c0eb445c49e186306cf5be35,
+    type: 2}
 --- !u!135 &135856678969778936
 SphereCollider:
   m_ObjectHideFlags: 1

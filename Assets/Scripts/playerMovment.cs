@@ -33,7 +33,7 @@ public class playerMovment : MonoBehaviour {
 	void OnCollisionEnter(Collision collision)
 	{
 		if (collision.gameObject.tag.Equals ("Bullet")) {
-			Destroy (collision.gameObject);
+//			Destroy (collision.gameObject);
 			GamePlayBusses.instance.HealthAmount--;
 //			float amount = 
 			GetComponent<MeshRenderer> ().materials[0].color = new Color (1, GamePlayBusses.instance.HealthAmount / GamePlayBusses.instance.Health, GamePlayBusses.instance.HealthAmount / GamePlayBusses.instance.Health);

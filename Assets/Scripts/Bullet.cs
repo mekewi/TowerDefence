@@ -5,7 +5,8 @@ using UnityEngine;
 public class Bullet : MonoBehaviour {
 
 	public Transform target;
-	public float speed ; 
+	public float speed;
+	public GameObject bulletImpact; 
 	// Use this for initialization
 	void Start () {
 		
@@ -28,6 +29,8 @@ public class Bullet : MonoBehaviour {
 		transform.Translate (followDir.normalized * distance, Space.World);
 	}
 	public void HitPlayer(){
-//		Destroy (gameObject);
+		GameObject impact = (GameObject) Instantiate (bulletImpact, transform.position, transform.rotation);
+		Destroy (impact,2f);
+		Destroy (gameObject);
 	}
 }
