@@ -12,8 +12,8 @@ public class GameUiHandler : MonoBehaviour {
 	void Start () {
 		
 	}
-	public void SetLifeValue(int MaxLife,int CurrentAmount){
-		LifeBarImage.fillAmount = (float)CurrentAmount / (float)MaxLife;
+	public void SetLifeValue(float MaxLife,float CurrentAmount){
+		LifeBarImage.fillAmount = CurrentAmount / MaxLife;
 		if (LifeBarImage.fillAmount <= 0) {
 			gameOver ();
 		}

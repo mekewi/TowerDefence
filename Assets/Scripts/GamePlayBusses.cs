@@ -11,9 +11,9 @@ public class GamePlayBusses : MonoBehaviour {
 	public GamePlay gamePlay;
 	public XMLLoader xmlLoader;
 	private int collectedCoins;
-	private int healthAmount;
+	private float healthAmount;
 
-	public int HealthAmount {
+	public float HealthAmount {
 		get {
 			return healthAmount;
 		}
@@ -23,9 +23,9 @@ public class GamePlayBusses : MonoBehaviour {
 		}
 	}
 
-	public int health;
+	public float health;
 
-	public int Health {
+	public float Health {
 		get {
 			return health;
 		}
