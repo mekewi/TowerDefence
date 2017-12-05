@@ -29,34 +29,30 @@ public class GridGenerator : MonoBehaviour {
 
 
 	// This Method to Draw The Grid Or Update it if there variables changed over life Time
-	public void DrawUpdateGrid(){
+	public IEnumerator DrawUpdateGrid(){
 		PlayGroundBounds = new bounds ();
-		for (int columnIndex = 0; columnIndex < numberOfColumns; columnIndex++) {
-			for (int rowIndex = 0; rowIndex < numberOfRows; rowIndex++) {
-				Transform CellObject;
-//				int cellIndex = getCellIndex (columnIndex, rowIndex);
-//				if (cellIndex < gridParent.childCount) {
-//					CellObject = gridParent.GetChild (cellIndex);
-//				} else {
-					CellObject = Instantiate (cellPrefab, gridParent) as Transform;
-//				}
-				float correctPositionX = ((columnIndex * spaceBetween) + columnIndex) * cellSize;
-				float correctPositionY = (((rowIndex * spaceBetween) + rowIndex)) * cellSize;
- 						
-				CellObject.localPosition = new Vector3 (correctPositionX,correctPositionY);
-				CellObject.localScale = new Vector3 (cellSize, 0.1f, cellSize);
-				CellObject.name = (columnIndex +","+ rowIndex+" : Index : "+getCellIndex(columnIndex,rowIndex));
-			}
-		}
 		PlayGroundBounds.MinX = 0;
 		PlayGroundBounds.MaxX = (float)cellSize * (float)numberOfColumns-(float)cellSize;
 		PlayGroundBounds.MinY = 0;
 		PlayGroundBounds.MaxY = (float)cellSize * (float)numberOfRows-(float)cellSize;
-
 		ground.localScale = new Vector3 (((float)cellSize * (float)numberOfColumns) / 10.0f, 1, ((float)cellSize * (float)numberOfRows) / 10.0f);
 		ground.localPosition = new Vector3 (((float)cellSize * (float)numberOfColumns)/2-((float)cellSize/2), (((float)cellSize * (float)numberOfRows)/2-((float)cellSize/2)), 0);
+		GamePlayBusses.instance.animationCamera.position = new Vector3 (((float)cellSize * (float)numberOfColumns)/2-((float)cellSize/2), GamePlayBusses.instance.animationCamera.position.y, GamePlayBusses.instance.animationCamera.position.z);
+		for (int columnIndex = 0; columnIndex < numberOfColumns; columnIndex++) {
+			for (int rowIndex = 0; rowIndex < numberOfRows; rowIndex++) {
+				Transform CellObject;
+				CellObject = Instantiate (cellPrefab, gridParent) as Transform;
+				float correctPositionX = ((columnIndex * spaceBetween) + columnIndex) * cellSize;
+				float correctPositionY = (((rowIndex * spaceBetween) + rowIndex)) * cellSize;
+				CellObject.localPosition = new Vector3 (correctPositionX,correctPositionY);
+				CellObject.localScale = new Vector3 (cellSize, 0.1f, cellSize);
+				CellObject.name = (columnIndex +","+ rowIndex+" : Index : "+getCellIndex(columnIndex,rowIndex));
+				yield return new WaitForSeconds (0.01f);
+
+			}
+		}
 		getbounds ();
-		GamePlayBusses.instance.GridGeneratedSuccess ();
+		StartCoroutine( GamePlayBusses.instance.GridGeneratedSuccess ());
 	}
 	public GameObject GetCellByCoordinate(CellDetails cellCoordinate){
 		int CellIndexInParent =  getCellIndex (cellCoordinate.ColumnIndex, cellCoordinate.RowIndex);
